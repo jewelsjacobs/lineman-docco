@@ -16,12 +16,7 @@ module.exports = (lineman) ->
         src: "docs"
 
     docs:
-      src: [
-        '<%= files.coffee.app %>'
-        '<%= files.coffee.spec %>'
-        'server'
-        'tasks'
-      ]
+      src: '<%= files.coffee.app %>'
       options:
         output: 'docs/'
 
