@@ -1,7 +1,7 @@
 {
   "name": "lineman-docs",
   "title": "A docs plugin for Lineman",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/jewelsjacobs/lineman-docs",
   "author": {
     "name": "Julia Jacobs",
