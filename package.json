@@ -1,19 +1,20 @@
 {
-  "name": "lineman-docco",
-  "title": "A Docco plugin for Lineman",
+  "name": "lineman-docs",
+  "title": "A docs plugin for Lineman",
   "version": "0.0.5",
-  "homepage": "https://github.com/jewelsjacobs/lineman-docco",
+  "homepage": "https://github.com/jewelsjacobs/lineman-docs",
   "author": {
     "name": "Julia Jacobs",
     "company": "Rackspace"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jewelsjacobs/lineman-docco.git"
+    "url": "git://github.com/jewelsjacobs/lineman-docs.git"
   },
   "main": "main.js",
   "dependencies": {
     "grunt-docco": "~0.3.2",
+    "grunt-gh-pages": "^0.9.1",
     "coffee-script": "~1.6.3"
   },
   "devDependencies": {

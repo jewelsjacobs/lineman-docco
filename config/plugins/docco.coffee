@@ -1,6 +1,3 @@
-fs = require('fs')
-path = require('path')
-
 module.exports = (lineman) ->
 
   app = lineman.config.application
@@ -9,14 +6,19 @@ module.exports = (lineman) ->
     loadNpmTasks: app.loadNpmTasks.concat("grunt-docco")
 
     prependTasks:
-      common: app.prependTasks.common.concat("docs")
+      common: app.prependTasks.common.concat("docco")
 
     clean:
       docs:
         src: "docs"
 
-    docs:
+    docco:
       src: '<%= files.coffee.app %>'
       options:
         output: 'docs/'
+
+    watch:
+      docco:
+        files: "<%= files.coffee.app %>",
+        tasks: ["docco"]
 
